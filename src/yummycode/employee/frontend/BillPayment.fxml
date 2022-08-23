@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="450.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.paymentcontroller.BillPayment_controller">
+   <children>
+      <HBox prefHeight="76.0" prefWidth="559.0">
+         <children>
+            <Pane prefHeight="91.0" prefWidth="205.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/275-2753886_rounded-arrow-icon-back-ios-png-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="7.0" layoutY="22.0" mnemonicParsing="false" onAction="#clickBack" opacity="0.0" text="Button" />
+               </children></Pane>
+            <ImageView fitHeight="91.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/z2962527610840_7c5a501cbbd3d1b634bb56ef1cd41e3c-01.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="220.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="12.0" />
+         </VBox.margin>
+      </HBox>
+      <Label alignment="CENTER" prefHeight="21.0" prefWidth="450.0" text="285 Đội Cấn - Ba Đình - HN" />
+      <Label alignment="BOTTOM_CENTER" prefHeight="46.0" prefWidth="450.0" style="-fx-font-weight: 700;" text="CASH RECEIPT">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="215.0" text="Bill Code : " />
+            <Label fx:id="billCode" prefHeight="21.0" prefWidth="189.0" text="aaaaa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="75.0" text="Date : ">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" prefHeight="25.0" prefWidth="322.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="450.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="59.0" text="Table : ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="table" layoutX="307.0" layoutY="11.0" prefHeight="25.0" prefWidth="338.0" text="s">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="tblBillPay" prefHeight="250.0" prefWidth="415.0" style="-fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="colNameFood" prefWidth="130.0" style="-fx-background-color: white;" text="Name" />
+          <TableColumn fx:id="colAmount" prefWidth="88.0" style="-fx-background-color: white;" text="Amount" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="84.0" style="-fx-background-color: white;" text="Unit Price" />
+            <TableColumn fx:id="colIntoMoney" prefWidth="102.0" style="-fx-background-color: white;" text="Into Money" />
+        </columns>
+         <VBox.margin>
+            <Insets left="24.0" right="24.0" top="12.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="559.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="239.0" text="Total  :">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="339.0" style="-fx-font-weight: 600; -fx-font-size: 18;">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="559.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="239.0" text="Voucher :">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="voucher" alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="339.0" style="-fx-font-weight: 600; -fx-font-size: 18;" text="20%">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="559.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="239.0" text="Total Pay :">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPay" alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="339.0" style="-fx-font-weight: 900;" text="80.000$" underline="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefHeight="1.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-width: 0;">
+         <VBox.margin>
+            <Insets left="24.0" right="24.0" />
+         </VBox.margin>
+      </Separator>
+      <Label prefHeight="35.0" prefWidth="552.0" style="-fx-text-fill: bold; -fx-font-weight: 900; -fx-font-size: 17; -fx-alignment: center;" text="Please double check your invoice before paying">
+         <VBox.margin>
+            <Insets left="24.0" right="24.0" top="12.0" />
+         </VBox.margin>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="676.0" prefWidth="600.0" style="-fx-text-fill: bold; -fx-font-size: 14; -fx-alignment: center;" text="( Invoice does not include  V.A.T tax )">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

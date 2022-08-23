@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.FoodMenuController">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="25.0">
+               <image>
+                  <Image url="@../image/275-2753886_rounded-arrow-icon-back-ios-png-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="16.0" layoutY="16.0" mnemonicParsing="false" onAction="#onclickBack" opacity="0.0" prefHeight="52.0" prefWidth="30.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="16.0" />
+            <Separator layoutY="61.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0" />
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="98.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="21.0">
+               <image>
+                  <Image url="@../image/113352.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="11.0" prefHeight="45.0" prefWidth="98.0" text="Payment" AnchorPane.topAnchor="19.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="101.0" layoutY="11.0" mnemonicParsing="false" onAction="#onclickPayment" opacity="0.0" prefHeight="41.0" prefWidth="116.0" text="Button" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="101.0" AnchorPane.topAnchor="20.0" />
+            <HBox alignment="CENTER" layoutX="403.0" layoutY="17.0" prefHeight="50.0" prefWidth="497.0" spacing="12.0" style="-fx-border-radius: ;">
+               <children>
+                  <TextField fx:id="searchFood" onAction="#onclickSearch" prefHeight="38.0" prefWidth="423.0" style="bo: 4;" />
+                  <ImageView fitHeight="39.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/261087606_621543155561098_3674203620595281108_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="642.0" prefWidth="1102.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </BorderPane.margin>
+         <content>
+            <GridPane fx:id="gridPane" prefHeight="192.0" prefWidth="139.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <StackPane fx:id="paneShowFoodOrder" prefHeight="666.0" prefWidth="434.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="12.0" right="12.0" top="12.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #fff; -fx-border-color: black;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0">
+                     <children>
+                        <BorderPane onMousePressed="#onclickBack" prefHeight="60.0" prefWidth="18.0" />
+                        <Label prefHeight="30.0" prefWidth="67.0" text="Order - ">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="IDBill" prefHeight="30.0" prefWidth="70.0" text="T01">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="60.0" prefWidth="142.0" />
+                        <ImageView fitHeight="37.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/z2988769879453_9676b0cfb408d4cc9217b6a72cca2816.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="seat" alignment="CENTER" prefHeight="40.0" prefWidth="27.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="53.0" fitWidth="33.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/1085182-200.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Separator prefHeight="0.0" prefWidth="400.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="51.0" text="Table :">
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="IDTable" prefHeight="25.0" prefWidth="56.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ScrollPane>
+                     <VBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <content>
+                        <VBox fx:id="ContainerFoodOrder" alignment="TOP_CENTER" prefHeight="381.0" prefWidth="355.0" spacing="4.0" />
+                     </content>
+                  </ScrollPane>
+                  <Separator prefWidth="200.0" />
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="462.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #dedede;">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="244.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Basic_Element_15-30__28566_29.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="33.0" text="Total Pay : ">
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="TotalMoney" prefHeight="40.0" text="0.0">
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <Label prefHeight="40.0" prefWidth="22.0" text="\$">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="67.0" prefWidth="400.0">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onclickCance" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50; -fx-background-color: #ff1212;" text="X" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="4.0" top="4.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Pane prefHeight="68.0" prefWidth="109.0" />
+                        <AnchorPane onMousePressed="#onclickSentChef" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #327ffa; -fx-background-radius: 50;">
+                           <HBox.margin>
+                              <Insets bottom="4.0" top="4.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/tải%20xuống%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></StackPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1026.0"
+ style="-fx-background-color: #062115;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.admin.controller.AdminHomeUi2Controller">
+
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="1026.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-236.0" prefHeight="43.0" prefWidth="867.0" style="-fx-background-color: #062115;">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="1150.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1150.0" AnchorPane.topAnchor="3.0">
+                     <image>
+                        <Image url="@../image/251354162_203864655259952_5497990899445870357_n.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="1221.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1221.0" AnchorPane.topAnchor="3.0">
+                     <image>
+                        <Image url="@../image/261628920_3099959083612182_27027738788534987_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnCancel" layoutX="1218.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1218.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnHidden" layoutX="1147.0" mnemonicParsing="false" onAction="#onClickHidden" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1147.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="160.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/259865915_750053942621769_5448810805767322473_n.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="319.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="389.0" text="Yummy Gang Manager" textFill="#e3a914">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="95.0" prefWidth="1026.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <AnchorPane prefHeight="56.0" prefWidth="195.0">
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="25.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@../../../../../New%20folder/YummyManager/src/admin/image/259811733_299915048686172_3156302327123501634_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="13.0" prefHeight="30.0" prefWidth="79.0" text="Log Out" textFill="#eb950b" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogOut" layoutY="2.0" mnemonicParsing="false" onAction="#onClickLogOut" prefHeight="52.0" prefWidth="193.0" style="-fx-opacity: 0;" text="Button" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="883.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="618.0" layoutY="14.0" prefHeight="108.0" prefWidth="121.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="101.0" prefHeight="26.0" prefWidth="88.0" text="Table Map" textFill="#eea812" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="101.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="124.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../image/259825460_643074657101737_8226519484157773381_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnTableMap1" mnemonicParsing="false" onAction="#onClickTableMap" prefHeight="115.0" prefWidth="135.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="368.0" layoutY="14.0" prefHeight="99.0" prefWidth="144.0">
+               <children>
+                  <Label layoutX="27.0" layoutY="101.0" prefHeight="26.0" prefWidth="94.0" text="Food Menu" textFill="#eea812" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="101.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="79.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../image/257360913_481129703228655_1830837419411425553_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnFoodMenu1" mnemonicParsing="false" onAction="#onClickFoodMenu" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="107.0" layoutY="14.0" prefHeight="122.0" prefWidth="139.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="101.0" prefHeight="26.0" prefWidth="66.0" text="Account" textFill="#eea812" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="101.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../image/260006165_310472280927122_4251956702566477433_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnAccount1" mnemonicParsing="false" onAction="#onClickAccount" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="107.0" layoutY="205.0" prefHeight="110.0" prefWidth="103.0">
+               <children>
+                  <Label layoutX="34.0" layoutY="101.0" prefHeight="30.0" prefWidth="79.0" text="Bill Order" textFill="#eea812" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="101.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="137.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../image/259773794_325870138992176_2261067272236141341_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnBillOrder1" mnemonicParsing="false" onAction="#onClickBillOrder" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="368.0" layoutY="205.0" prefHeight="95.0" prefWidth="105.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="101.0" prefHeight="30.0" prefWidth="43.0" text="Sale" textFill="#eea812" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="101.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="131.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../image/259884288_606480067263501_7014853186655110005_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnSale1" mnemonicParsing="false" onAction="#onClickSale" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="618.0" layoutY="205.0" prefHeight="142.0" prefWidth="147.0">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="111.0" layoutX="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../image/259953320_1216638268746509_4531180040362505008_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="102.0" text="Statistical chart" textFill="#eea812" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="102.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnChart1" layoutX="1.0" mnemonicParsing="false" onAction="#onClickChart" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: #faa200; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="681.0" />
+         </padding>
+      </Pane>
+   </center>
+</BorderPane>

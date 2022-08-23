@@ -1,0 +1,30 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar"
+        ],
+        "exclude": [
+            "lib/MyLicense-1.0.jar",
+            "lib/activation-1.0.2.jar",
+            "lib/restfb-3.23.0.jar",
+            "lib/jxbrowser-win64-7.20.jar",
+            "lib/jxbrowser-win32-7.20.jar",
+            "lib/jxbrowser-swt-7.20.jar",
+            "lib/jxbrowser-swing-7.20.jar",
+            "lib/jxbrowser-mac-arm-7.20.jar",
+            "lib/jxbrowser-mac-7.20.jar",
+            "lib/jxbrowser-linux64-arm-7.20.jar",
+            "lib/jxbrowser-linux64-7.20.jar",
+            "lib/jxbrowser-7.20.jar",
+            "lib/jxbrowser-javafx-7.20.jar",
+            "lib/javax.servlet-3.0.0.v201112011016.jar",
+            "lib/json-20200518.jar",
+            "lib/fontawesomefx-glyphsbrowser-1.3.0.jar",
+            "lib/fontawesomefx-8.0.1.jar",
+            "lib/ikonli-javafx-12.1.0.jar",
+            "lib/fontawesomefx-8.4.jar"
+        ]
+    }
+}

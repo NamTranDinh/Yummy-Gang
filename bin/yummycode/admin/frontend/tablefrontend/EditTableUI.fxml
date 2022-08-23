@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="489.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.controller.tablecontroller.EditTableController">
+   <children>
+      <Label layoutX="14.0" layoutY="77.0" prefHeight="49.0" prefWidth="114.0" text="Table ID:" textFill="#186b01">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTableID" layoutX="159.0" layoutY="70.0" prefHeight="49.0" prefWidth="324.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent;">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="9.0" layoutY="193.0" prefHeight="49.0" prefWidth="149.0" text="Seats Number:" textFill="#0d6b02">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="262.0" prefHeight="49.0" prefWidth="149.0" text="Floor Number:" textFill="#286f07">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="334.0" prefHeight="49.0" prefWidth="139.0" text="Table Status:" textFill="#05610e">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cbTableStatus" layoutX="159.0" layoutY="333.0" prefHeight="42.0" prefWidth="324.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-background-color: transparent; -fx-font-size: 20px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Button fx:id="btnSubmit" layoutX="159.0" layoutY="416.0" mnemonicParsing="false" onAction="#onClickSubmit" prefHeight="49.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: #0d3d1b; -fx-border-width: 3;" text="Submit" textFill="#056110">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtSeatsNumber" layoutX="158.0" layoutY="199.0" prefHeight="49.0" prefWidth="324.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtFloorsNumber" layoutX="158.0" layoutY="261.0" prefHeight="49.0" prefWidth="324.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="172.0" layoutY="9.0" text="Edit Table" textFill="#186b01">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="133.0" prefHeight="49.0" prefWidth="126.0" text="Table Name:" textFill="#186b01">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTableName" layoutX="159.0" layoutY="126.0" prefHeight="49.0" prefWidth="324.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

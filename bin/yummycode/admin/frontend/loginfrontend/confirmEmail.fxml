@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="600.0" style="-fx-background-color: #3f9e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.admin.controller.acountcontroller.ConfirmEmailController">
+   <children>
+      <TextField fx:id="txtEmail" layoutX="94.0" layoutY="99.0" prefHeight="49.0" prefWidth="398.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent; -fx-text-fill: #0d3d1b;">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="156.0" layoutY="22.0" text="Please enter your email" textFill="#1c5b05">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOk" layoutX="354.0" layoutY="181.0" mnemonicParsing="false" onAction="#onClickOk" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: tranparent; -fx-border-color: #0d3d1b; -fx-border-width: 3;" text="Ok" textFill="#204605">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="txtAlert" layoutX="129.0" layoutY="67.0" text="Enter the email that the administrator gave you" textFill="#144a05">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="85.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/261707322_483245199676635_4541255635739632404_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

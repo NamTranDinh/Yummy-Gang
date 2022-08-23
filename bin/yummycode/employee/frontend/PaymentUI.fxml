@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.paymentcontroller.Payment_controller">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="67.0" prefWidth="69.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="22.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/275-2753886_rounded-arrow-icon-back-ios-png-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#onclickBack" opacity="0.0" prefHeight="63.0" prefWidth="65.0" text="Button" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPnaeContainer" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="gridPaneContainer">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="980.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onClickPayment" prefHeight="31.0" prefWidth="125.0" text="Payment" />
+            <Button alignment="CENTER" layoutX="438.0" layoutY="25.0" mnemonicParsing="false" onAction="#onClickSeeDetail" prefHeight="31.0" prefWidth="125.0" text="See Detail" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

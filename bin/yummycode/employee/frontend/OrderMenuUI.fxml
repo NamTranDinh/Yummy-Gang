@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #fff; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.FoodMenuController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0">
+         <children>
+            <BorderPane onMousePressed="#onclickBack" prefHeight="57.0" prefWidth="45.0">
+               <center>
+                  <ImageView fitHeight="40.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/275-2753886_rounded-arrow-icon-back-ios-png-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <Label prefHeight="30.0" prefWidth="67.0" text="Order - ">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="IDBill" prefHeight="30.0" prefWidth="70.0" text="T01">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="60.0" prefWidth="105.0" />
+            <ImageView fitHeight="37.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/z2988769879453_9676b0cfb408d4cc9217b6a72cca2816.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="seat" alignment="CENTER" prefHeight="40.0" prefWidth="27.0" text="2">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/1085182-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Separator prefHeight="0.0" prefWidth="400.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="51.0" text="Table :">
+               <HBox.margin>
+                  <Insets left="16.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="IDTable" prefHeight="25.0" prefWidth="56.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane>
+         <VBox.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" />
+         </VBox.margin>
+         <content>
+            <VBox fx:id="ContainerFoodOrder" alignment="TOP_CENTER" prefHeight="384.0" prefWidth="355.0" spacing="1.0" />
+         </content>
+      </ScrollPane>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="20.0" prefWidth="131.0" style="-fx-background-color: #d4d4d4; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1709629-200.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" text="MORE DISH">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="6.0" right="12.0" top="6.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="462.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #dedede;">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="244.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Basic_Element_15-30__28566_29.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="33.0" text="Total Pay : ">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalMoney" prefHeight="40.0" text="25.5">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="12.0" right="12.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="67.0" prefWidth="400.0">
+         <VBox.margin>
+            <Insets bottom="4.0" />
+         </VBox.margin>
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onclickCance" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50; -fx-background-color: #ff1212;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Button>
+            <Pane prefHeight="68.0" prefWidth="109.0" />
+            <AnchorPane onMousePressed="#onclickSentChef" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #327ffa; -fx-background-radius: 50;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/tải%20xuống%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

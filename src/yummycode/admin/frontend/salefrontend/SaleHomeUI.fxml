@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.controller.salecontroller.SaleCodeHomeController">
+   <children>
+      <AnchorPane layoutX="146.0" layoutY="47.0" prefHeight="659.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <TableView fx:id="tblSaleDetails" onMouseClicked="#onClickTableView" prefHeight="706.0" prefWidth="1073.0" style="-fx-background-color: #b0baaf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="tcStartDay" prefWidth="141.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-cursor: HAND;" text="Start day" />
+                  <TableColumn fx:id="tcEndDay" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="144.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-cursor: HAND;" text="End day" />
+                  <TableColumn fx:id="tcSalesCodes" prefWidth="233.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-cursor: HAND;" text="Sale codes" />
+                  <TableColumn fx:id="tcDecription" minWidth="0.0" prefWidth="273.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-cursor: HAND;" text="Decriptions" />
+                  <TableColumn fx:id="tcDiscount" maxWidth="334.0" prefWidth="130.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-currsor: HAND;" text="Discount(%)" />
+                  <TableColumn fx:id="tcStatus" maxWidth="423.0" minWidth="0.0" prefWidth="150.0" style="-fx-font-size: 20px; -fx-background-color: #378048; -fx-cursor: HAND;" text="Status" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneSlide2" layoutX="10.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="146.0" style="-fx-background-color: #062115;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <AnchorPane layoutY="74.0" onMouseClicked="#onClickOverPane" prefHeight="599.0" prefWidth="147.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="12.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="517.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="52.0">
+                     <image>
+                        <Image url="@../../image/259964668_362185862373107_2023175482526643665_n.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="11.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="435.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="131.0">
+                     <image>
+                        <Image url="@../../image/259986941_962541037675386_250621571140989170_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="58.0" text="Add" textFill="#e56a0b" AnchorPane.bottomAnchor="523.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="58.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="139.0" text="Edit" textFill="#e56a0b" AnchorPane.bottomAnchor="442.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="139.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="11.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="215.0">
+                     <image>
+                        <Image url="@../../image/261087606_621543155561098_3674203620595281108_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="221.0" prefHeight="28.0" prefWidth="76.0" text="Search" textFill="#e56a0b" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="221.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnEdit" layoutY="48.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="432.0" AnchorPane.leftAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSearch" layoutY="211.0" mnemonicParsing="false" onAction="#onClickSearch" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="211.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnAdd" layoutY="52.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="533.0">
+                     <image>
+                        <Image url="@../../image/260206737_2959387777648421_6109767548395303530_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="537.0" text="Back" textFill="#e56a0b" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="537.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnBack" layoutY="527.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="527.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="147.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/259865915_750053942621769_5448810805767322473_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="paneTranslate" layoutX="146.0" layoutY="47.0" prefHeight="659.0" prefWidth="518.0" style="-fx-background-color: #46bd4a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <StackPane fx:id="contentArea" layoutX="37.0" layoutY="46.0" prefHeight="634.0" prefWidth="448.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="46.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneSlide1" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="146.0" style="-fx-background-color: #062115;">
+         <children>
+            <AnchorPane layoutY="74.0" prefHeight="609.0" prefWidth="147.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="12.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="517.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="52.0">
+                     <image>
+                        <Image url="@../../image/259964668_362185862373107_2023175482526643665_n.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="11.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="435.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="131.0">
+                     <image>
+                        <Image url="@../../image/259986941_962541037675386_250621571140989170_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="58.0" text="Add" textFill="#e56a0b" AnchorPane.bottomAnchor="523.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="58.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="139.0" text="Edit" textFill="#e56a0b" AnchorPane.bottomAnchor="442.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="139.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="11.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="215.0">
+                     <image>
+                        <Image url="@../../image/261087606_621543155561098_3674203620595281108_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="221.0" prefHeight="28.0" prefWidth="76.0" text="Search" textFill="#e56a0b" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="221.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnMainEdit" layoutY="48.0" mnemonicParsing="false" onAction="#onClickMainEdit" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="432.0" AnchorPane.leftAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnMainSearch" layoutY="211.0" mnemonicParsing="false" onAction="#onClickMainSearch" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="211.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnMainAdd" layoutY="52.0" mnemonicParsing="false" onAction="#onClickMainAdd" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="533.0">
+                     <image>
+                        <Image url="@../../image/260206737_2959387777648421_6109767548395303530_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="537.0" text="Back" textFill="#e56a0b" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="537.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnBack1" layoutY="527.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="527.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="147.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/259865915_750053942621769_5448810805767322473_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="-67.0" layoutY="-1.0" prefHeight="48.0" prefWidth="1285.0" style="-fx-background-color: #062115;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="1150.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1150.0" AnchorPane.topAnchor="3.0">
+               <image>
+                  <Image url="@../../image/251354162_203864655259952_5497990899445870357_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="1221.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1221.0" AnchorPane.topAnchor="3.0">
+               <image>
+                  <Image url="@../../image/261628920_3099959083612182_27027738788534987_n.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnCancel" layoutX="1218.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1218.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnHidden" layoutX="1147.0" mnemonicParsing="false" onAction="#onClickHidden" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1147.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneSearchTranslate" layoutX="219.0" prefHeight="65.0" prefWidth="888.0" style="-fx-background-color: #81cca3; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtSearch" layoutX="96.0" prefHeight="48.0" prefWidth="435.0" style="-fx-background-color: transparent; -fx-border-color: #052614; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-text-fill: #052614;" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

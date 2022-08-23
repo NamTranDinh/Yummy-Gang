@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clickItem" prefHeight="181.0" prefWidth="147.0" style="-fx-background-radius: 20; -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.FoodItemController">
+   <children>
+      <ImageView fx:id="imgFood" fitHeight="106.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+         </VBox.margin>
+         <image>
+            <Image url="@../image/img5.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="54.0" prefWidth="135.0">
+         <children>
+            <Label fx:id="FoodName" alignment="CENTER" prefHeight="27.0" prefWidth="135.0" text="Name Food">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="FoodPrice" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="12.0" prefWidth="135.0" text="price" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.tablecontroller.TableItem_controller">
+   <children>
+      <Button fx:id="textButton" layoutX="18.0" layoutY="28.0" mnemonicParsing="false" onAction="#onclickChooseTable" prefHeight="40.0" prefWidth="85.0"  text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="11.0" fitWidth="35.0" layoutX="42.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-clipart-plus-and-minus-signs-subtraction-meno-plus-minus-sign-mathematics-rectangle-black-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="11.0" fitWidth="35.0" layoutX="42.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-clipart-plus-and-minus-signs-subtraction-meno-plus-minus-sign-mathematics-rectangle-black-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="11.0" fitWidth="35.0" layoutX="-8.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../image/png-clipart-plus-and-minus-signs-subtraction-meno-plus-minus-sign-mathematics-rectangle-black-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="11.0" fitWidth="35.0" layoutX="93.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../image/png-clipart-plus-and-minus-signs-subtraction-meno-plus-minus-sign-mathematics-rectangle-black-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

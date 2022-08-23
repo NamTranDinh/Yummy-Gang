@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yummycode.employee.controller.tablecontroller.TableMap_controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="191.0" prefWidth="1202.0" text="Seat Map">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <HBox prefHeight="50.0" prefWidth="978.0">
+         <children>
+            <Pane prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #385898;;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="12.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Label prefHeight="30.0" text="Empty">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #96be25;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Label prefHeight="30.0" text="serving">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #e28743;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Label prefHeight="30.0" text="Reserve">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #7d0600;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Label prefHeight="30.0" text="Maintenance">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="58.0" prefWidth="978.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="76.0" prefWidth="610.0" text="1st Floor">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="590.0" text="2nd Floor">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="506.0" prefWidth="978.0">
+         <children>
+            <ScrollPane prefHeight="509.0" prefWidth="620.0">
+              <content>
+                <AnchorPane fx:id="tablesOn1stFloor" minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="600.0">
+                     <children>
+                        <GridPane fx:id="containerTable1stFloor" layoutY="6.0" prefHeight="0.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <HBox.margin>
+                  <Insets bottom="12.0" />
+               </HBox.margin>
+            </ScrollPane>
+            <ScrollPane prefHeight="420.0" prefWidth="582.0">
+              <content>
+                <AnchorPane fx:id="tableOn2ndFloor" minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="562.0">
+                     <children>
+                        <GridPane fx:id="containerTable2ndFloor" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <HBox.margin>
+                  <Insets bottom="12.0" />
+               </HBox.margin>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#onclickPayment" prefHeight="31.0" prefWidth="229.0" text="Payment">
+         <VBox.margin>
+            <Insets bottom="20.0" left="500.0" right="500.0" top="20.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+   </children>
+</VBox>

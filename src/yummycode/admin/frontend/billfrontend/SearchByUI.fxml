@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="464.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DatePicker fx:id="dateStart" layoutX="138.0" layoutY="88.0" prefHeight="39.0" prefWidth="188.0" style="-fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent; -fx-border-color: #0d3d1b; -fx-border-width: 3;" />
+      <DatePicker fx:id="dateEnd" layoutX="138.0" layoutY="180.0" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: transparent; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #0d3d1b; -fx-border-width: 3;" />
+      <Label layoutX="38.0" layoutY="94.0" prefHeight="26.0" prefWidth="47.0" text="From:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="186.0" prefHeight="26.0" prefWidth="33.0" text="To:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApply" layoutX="138.0" layoutY="280.0" mnemonicParsing="false" onAction="#onClickApply" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #1d5245;" text="Apply" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="138.0" layoutY="28.0" prefHeight="32.0" prefWidth="159.0" text="Search by Date" textFill="#065115">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="394.0" prefHeight="32.0" prefWidth="114.0" text="Or search:" textFill="#095b04">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="48.0" layoutY="465.0" prefHeight="49.0" prefWidth="368.0" style="-fx-border-color: #0d3d1b; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden; -fx-background-color: transparent;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSearch" layoutX="138.0" layoutY="538.0" mnemonicParsing="false" onAction="#onClickSearch" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #1d5245;" text="Search" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
